@@ -6,11 +6,9 @@ import { Link } from 'react-router-dom';
 
 import {
     Body,
-    IconsBox,
-    BackgroundPage
+    IconsBox
 } from './styles'
 import logo from '../../assets/logo.png'
-import bgpage from '../../assets/background-page.mp4'
 
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -63,21 +61,14 @@ const theme = createTheme({
 });
 
 const Item = styled(Paper)(({ theme }) => ({
-    padding: theme.spacing(1),
+    padding: theme.spacing(0),
     textAlign: 'center'
 }));
-
-/*<BackgroundPage autoPlay loop muted>
-                <source src={bgpage} type='video/mp4' />
-            </BackgroundPage>*/
 
 export default function Home() {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
 
-        // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
 
@@ -130,7 +121,7 @@ export default function Home() {
                         },
                         links: {
                             color: "#1da57a",
-                            distance: 150,
+                            distance: 120,
                             enable: true,
                             opacity: 0.5,
                             width: 1,
@@ -153,7 +144,7 @@ export default function Home() {
                                 enable: true,
                                 area: 800,
                             },
-                            value: 80,
+                            value: 100,
                         },
                         opacity: {
                             value: 0.5,
@@ -173,7 +164,7 @@ export default function Home() {
                     <Link to={'/'}>
                         <img
                             src={logo}
-                            style={{ width: '280px', marginBottom: '50px' }}
+                            style={{ width: '280px', marginBottom: '50px'}}
                         />
                     </Link>
 
@@ -182,6 +173,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
+                                        style={{width: '100%'}}
                                         variant="contained"
                                         color="primary"
                                         size="large"
@@ -192,8 +184,9 @@ export default function Home() {
                                 </Item>
                             </Grid>
                             <Grid item xs={6}>
-                                <Item>
+                                <Item style={{padding: 'none'}}>
                                     <Button
+                                        style={{width: '100%'}}
                                         variant="contained"
                                         color="primary"
                                         size="large"
@@ -206,6 +199,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
+                                        style={{width: '100%'}}
                                         variant="contained"
                                         color="primary"
                                         size="large"
@@ -218,6 +212,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
+                                        style={{width: '100%'}}
                                         variant="contained"
                                         color="primary"
                                         size="large"
