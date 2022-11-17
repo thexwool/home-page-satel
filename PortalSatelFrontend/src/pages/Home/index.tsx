@@ -76,6 +76,10 @@ export default function Home() {
         await console.log(container);
     }, []);
 
+    const handleOpenInNewTab = (url: string) => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
     return (
         <Body>
             <Particles
@@ -88,7 +92,7 @@ export default function Home() {
                             value: "#000",
                         },
                     },
-                    fullScreen:{
+                    fullScreen: {
                         enable: true,
                         zIndex: -1,
                     },
@@ -161,36 +165,38 @@ export default function Home() {
             />
             <ThemeProvider theme={theme}>
                 <IconsBox>
-                    <Link to={'/'}>
+                    <a onClick={() => handleOpenInNewTab('https://www.portalsatel.com.br')} style={{cursor: "pointer"}}>
                         <img
                             src={logo}
-                            style={{ width: '280px', marginBottom: '50px'}}
+                            style={{ width: '280px', marginBottom: '50px' }}
                         />
-                    </Link>
+                    </a>
 
                     <Box sx={{ width: '100%' }}>
                         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
-                                        style={{width: '100%'}}
+                                        style={{ width: '100%' }}
                                         variant="contained"
                                         color="primary"
                                         size="large"
                                         className="buttonStyle"
+                                        onClick={() => handleOpenInNewTab('https://www.google.com/search?q=helpdesk&client=opera-gx&hs=l3V&sxsrf=ALiCzsZNnvPP5FeCw776dqZSU7ILNXfIGQ%3A1668721369660&ei=2ap2Y9H-J7mK5OUPh6q08Ak&ved=0ahUKEwiRz97Dl7b7AhU5BbkGHQcVDZ4Q4dUDCA4&uact=5&oq=helpdesk&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQ0QM6DgguEIAEELEDEMcBENEDOg4ILhCxAxCDARDHARDRAzoICC4QgAQQsQM6CwguEIAEELEDEIMBOggILhCxAxCDAToLCC4QgAQQsQMQ1AI6BQguEIAEOgsILhCABBDHARCvAToFCAAQsQNKBAhBGABKBAhGGABQAFj1CGCnCmgAcAF4AIABngGIAbcHkgEDMS43mAEAoAEBwAEB&sclient=gws-wiz-serp')}
                                     >
                                         HelpDesk
                                     </Button>
                                 </Item>
                             </Grid>
                             <Grid item xs={6}>
-                                <Item style={{padding: 'none'}}>
+                                <Item style={{ padding: 'none' }}>
                                     <Button
-                                        style={{width: '100%'}}
+                                        style={{ width: '100%' }}
                                         variant="contained"
                                         color="primary"
                                         size="large"
                                         className="buttonStyle"
+                                        onClick={() => handleOpenInNewTab('https://portal-ceara.herokuapp.com/')}
                                     >
                                         PJ Ceará
                                     </Button>
@@ -199,11 +205,12 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
-                                        style={{width: '100%'}}
+                                        style={{ width: '100%' }}
                                         variant="contained"
                                         color="primary"
                                         size="large"
                                         className="buttonStyle"
+                                        onClick={() => handleOpenInNewTab('https://www.google.com/search?client=opera-gx&q=apt&sourceid=opera&ie=UTF-8&oe=UTF-8')}
                                     >
                                         APT
                                     </Button>
@@ -212,11 +219,12 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
-                                        style={{width: '100%'}}
+                                        style={{ width: '100%' }}
                                         variant="contained"
                                         color="primary"
                                         size="large"
                                         className="buttonStyle"
+                                        onClick={() => handleOpenInNewTab('https://www.satelbrasilenergia.com.br/')}
                                     >
                                         Site
                                     </Button>
