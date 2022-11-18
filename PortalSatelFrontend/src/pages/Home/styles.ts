@@ -8,13 +8,12 @@ export const Body = styled.div`
     justify-content: center;
 `;
 
-export const IconsBox = styled.div`
+export const ButtonBox = styled.div`
     padding: 80px;
     display: flex;
     flex-direction: column;
-    background-color: #FFF;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    opacity: 0.9;
+    background-color: rgba(200,200,200,0.9);
 `

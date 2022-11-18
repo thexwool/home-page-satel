@@ -5,7 +5,7 @@ import { loadFull } from "tsparticles";
 
 import {
     Body,
-    IconsBox
+    ButtonBox
 } from './styles'
 import logo from '../../assets/logo.png'
 
@@ -50,7 +50,7 @@ const theme = createTheme({
     palette: {
         primary: {
             main: '#1da57a',
-            darker: '#1DA57AC5',
+            darker: '#157254',
         },
         neutral: {
             main: '#64748B',
@@ -163,7 +163,7 @@ export default function Home() {
                 }}
             />
             <ThemeProvider theme={theme}>
-                <IconsBox>
+                <ButtonBox>
                     <a onClick={() => handleOpenInNewTab('https://www.portalsatel.com.br')} style={{cursor: "pointer"}}>
                         <img
                             src={logo}
@@ -176,21 +176,21 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
-                                        style={{ width: '100%' }}
+                                        style={{ width: '100%', fontFamily: 'Roboto' }}
                                         variant="contained"
                                         color="primary"
                                         size="large"
                                         className="buttonStyle"
-                                        onClick={() => handleOpenInNewTab('https://www.google.com/search?q=helpdesk&client=opera-gx&hs=l3V&sxsrf=ALiCzsZNnvPP5FeCw776dqZSU7ILNXfIGQ%3A1668721369660&ei=2ap2Y9H-J7mK5OUPh6q08Ak&ved=0ahUKEwiRz97Dl7b7AhU5BbkGHQcVDZ4Q4dUDCA4&uact=5&oq=helpdesk&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQ0QM6DgguEIAEELEDEMcBENEDOg4ILhCxAxCDARDHARDRAzoICC4QgAQQsQM6CwguEIAEELEDEIMBOggILhCxAxCDAToLCC4QgAQQsQMQ1AI6BQguEIAEOgsILhCABBDHARCvAToFCAAQsQNKBAhBGABKBAhGGABQAFj1CGCnCmgAcAF4AIABngGIAbcHkgEDMS43mAEAoAEBwAEB&sclient=gws-wiz-serp')}
+                                        onClick={() => handleOpenInNewTab('https://www.google.com/search?q=rapidez&client=opera-gx&sxsrf=ALiCzsZeZ4ujc82QXiWF0wtL95oIx86szw%3A1668774606409&ei=znp3Y9nBGPiq5OUPl7GvqA4&ved=0ahUKEwjZ4P_s3bf7AhV4FbkGHZfYC-UQ4dUDCA4&uact=5&oq=rapidez&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzINCAAQgAQQsQMQRhD5ATIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCCMQJxATOgsIABCABBCxAxCDAToICC4QgAQQ1AI6EQguEIAEELEDEIMBEMcBENEDOgsILhCABBDHARDRAzoLCC4QgAQQsQMQgwE6DgguEIAEELEDEMcBENEDOggILhCABBCxAzoICAAQsQMQgwE6BQguEIAEOgUIABCxAzoLCC4QgAQQxwEQrwFKBAhBGABKBAhGGABQAFiuDGDHDmgAcAF4AIABlgGIAY0HkgEDMC43mAEAoAEBwAEB&sclient=gws-wiz-serp')}
                                     >
                                         HelpDesk
                                     </Button>
                                 </Item>
                             </Grid>
                             <Grid item xs={6}>
-                                <Item style={{ padding: 'none' }}>
+                                <Item>
                                     <Button
-                                        style={{ width: '100%' }}
+                                        style={{ width: '100%', fontFamily: 'Roboto'}}
                                         variant="contained"
                                         color="primary"
                                         size="large"
@@ -204,7 +204,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
-                                        style={{ width: '100%' }}
+                                        style={{ width: '100%', fontFamily: 'Roboto' }}
                                         variant="contained"
                                         color="primary"
                                         size="large"
@@ -218,7 +218,7 @@ export default function Home() {
                             <Grid item xs={6}>
                                 <Item>
                                     <Button
-                                        style={{ width: '100%' }}
+                                        style={{ width: '100%', fontFamily: 'Roboto' }}
                                         variant="contained"
                                         color="primary"
                                         size="large"
@@ -231,7 +231,7 @@ export default function Home() {
                             </Grid>
                         </Grid>
                     </Box>
-                </IconsBox>
+                </ButtonBox>
             </ThemeProvider>
         </Body>
     )
