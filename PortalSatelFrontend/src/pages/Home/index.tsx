@@ -181,7 +181,7 @@ export default function Home() {
                                         color="primary"
                                         size="large"
                                         className="buttonStyle"
-                                        onClick={() => handleOpenInNewTab('https://www.google.com/search?q=rapidez&client=opera-gx&sxsrf=ALiCzsZeZ4ujc82QXiWF0wtL95oIx86szw%3A1668774606409&ei=znp3Y9nBGPiq5OUPl7GvqA4&ved=0ahUKEwjZ4P_s3bf7AhV4FbkGHZfYC-UQ4dUDCA4&uact=5&oq=rapidez&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzINCAAQgAQQsQMQRhD5ATIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoECCMQJzoGCCMQJxATOgsIABCABBCxAxCDAToICC4QgAQQ1AI6EQguEIAEELEDEIMBEMcBENEDOgsILhCABBDHARDRAzoLCC4QgAQQsQMQgwE6DgguEIAEELEDEMcBENEDOggILhCABBCxAzoICAAQsQMQgwE6BQguEIAEOgUIABCxAzoLCC4QgAQQxwEQrwFKBAhBGABKBAhGGABQAFiuDGDHDmgAcAF4AIABlgGIAY0HkgEDMC43mAEAoAEBwAEB&sclient=gws-wiz-serp')}
+                                        onClick={() => handleOpenInNewTab('https://helpdesk-satel.netlify.app/home')}
                                     >
                                         HelpDesk
                                     </Button>
@@ -209,7 +209,7 @@ export default function Home() {
                                         color="primary"
                                         size="large"
                                         className="buttonStyle"
-                                        onClick={() => handleOpenInNewTab('https://www.google.com/search?client=opera-gx&q=apt&sourceid=opera&ie=UTF-8&oe=UTF-8')}
+                                        onClick={() => handleOpenInNewTab('https://atp-satel.netlify.app')}
                                     >
                                         APT
                                     </Button>
